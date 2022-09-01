@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.kbbank.donation.dto.MemberDTO;
 import com.kbbank.donation.service.MemberService;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping(value = "/member")
@@ -34,29 +35,23 @@ public class MemberController {
     }
 
     @RequestMapping(value = "/login_check.do", method = RequestMethod.POST)
-    public String memberLogin(@RequestParam("userid") String id
-                       , @RequestParam("passwd") String password , HttpSession session) throws Exception {
+	public String login(MemberDTO dto, HttpServletRequest req, RedirectAttributes rttr) throws Exception {
 
-        String path = "";
+		HttpSession session = req.getSession();
+		MemberDTO login = service.memberLogin(dto);
+//		MemberDTO userNickName = service.memberNickName(dto);
 
-        MemberDTO dto = new MemberDTO();
-        
-//        session.setAttribute("LoginUser", service.memberNickName(dto));
-//        System.out.println(service.memberNickName(dto));
-        session.setAttribute("LoginUser", id);
-        
-        dto.setUserid(id);
-        dto.setPasswd(password);
+		if(login == null) {
+			session.setAttribute("member", null);
+			rttr.addFlashAttribute("msg", false);
+			return "member/loginError";
+		} else {
+//			로그인 성공 시
+			session.setAttribute("nickName", login.getNickName());
+			System.out.println(login.getNickName());
+		}
 
-        int result = service.memberLogin(dto);
-
-        if(result == 1) {
-            path = "member/success";
-        } else {
-            path = "member/loginError";
-        }
-
-        return path;
+		return "member/success";
 
     }
 	

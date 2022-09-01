@@ -15,20 +15,14 @@ public class MemberService implements IMemberService{
 	MemberDAO memberDao;
 
 	@Override
-	public int memberLogin(MemberDTO dto) throws Exception {
-		
-		int name = memberDao.memberLogin(dto);
-		
-		return name;
+	public MemberDTO memberLogin(MemberDTO dto) throws Exception {
+		return memberDao.memberLogin(dto);
 	}
 	
-	@Override
-	public String memberNickName(MemberDTO dto) throws Exception {
-		
-		String LoginUser = memberDao.memberNickName(dto);
-		
-		return LoginUser;
-	}
+//	@Override
+//	public MemberDTO memberNickName(MemberDTO dto) throws Exception {
+//		return memberDao.memberNickName(dto);
+//	}
 	
 	@Override
 	public void memberJoin(MemberDTO dto) throws Exception {

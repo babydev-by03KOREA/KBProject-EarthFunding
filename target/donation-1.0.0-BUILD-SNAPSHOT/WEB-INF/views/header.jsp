@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +29,12 @@
         </ul>
 
         <ul class="navbar__icons">
-            <li><i class="fa-solid fa-arrow-right-to-bracket"><a href="/member/login.do">로그인</a></i></li>
-            <li><i class="fa-solid fa-file-signature"><a href="/member/UserJoin.do">회원가입</a></i></li>
+            <li>
+                <i class="fa-solid fa-arrow-right-to-bracket"><a href="/member/login.do">로그인</a></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-file-signature"><a href="/member/UserJoin.do">회원가입</a></i>
+            </li>
         </ul>
 
         <a href="#" class="navbar__toogleBtn">

@@ -5,9 +5,57 @@
 <!-- 인터페이스의 이름과 namespace 속성으로 판단. -->
 <mapper namespace="Member">
 	 <!-- 로그인 -->
-    <select id="memberLogin" resultType="Int" parameterType="MemberDTO">
-        select COUNT(*) 
-        from KBUSER 
-        where userid = #{userid} and passwd = #{passwd}
+    <select id="memberLogin" resultType="MemberDTO">
+    
+	    <![CDATA[
+	        select USERID, PASSWD, NICKNAME
+	        from KBUSER
+	        where userid = #{userid} and passwd = #{passwd}
+	    ]]>
+	    
     </select>
+    
+    <insert id="register">
+	    <![CDATA[
+		    INSERT INTO KBUSER (   USERID 
+		   					       , PASSWD
+		   					       , nickName 	)
+		                  VALUES(    #{userid} 
+		                 		   , #{passwd}
+		                 		   , #{nickName, jdbcType=VARCHAR})
+		]]>
+    </insert>
+    
+    <!-- Login User nickName 가져오기 작업 중 Error 발생 / 보류 -->
+    
+<!--    <select id="memberNickName" resultType="MemberDTO">-->
+<!--	    <![CDATA[-->
+<!--	        select nickName-->
+<!--	        from KBUSER-->
+<!--	        where userid = #{userid}-->
+<!--	    ]]>-->
+<!--    </select>-->
+    
+    <!-- 
+	    Login For Kakao
+	    정보 찾기 
+    -->
+	<select id="findKakao" parameterType="java.util.HashMap" resultType="KakaoDTO">
+	
+		<![CDATA[
+			select * from kakao_table where k_name=#{nickname} and k_email=#{email}
+		]]>
+		
+	</select>
+
+	<!-- 정보 저장 -->
+	<insert id="Kakaoinsert" parameterType="java.util.HashMap">
+
+		<![CDATA[
+			insert into kakao_table(k_name, k_email)
+				values(#{nickname}, #{email})
+		]]>
+		
+	</insert>
+	
 </mapper>

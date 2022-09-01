@@ -16,14 +16,14 @@ public class MemberDAO implements IMemberDAO{
 	private SqlSessionTemplate session;
 
 	@Override
-	public int memberLogin(MemberDTO dto) throws Exception {
+	public MemberDTO memberLogin(MemberDTO dto) throws Exception {
 		return session.selectOne("Member.memberLogin", dto);
 	}
 	
-	@Override
-	public String memberNickName(MemberDTO dto) throws Exception {
-		return session.selectOne("Member.memberNickName", dto);
-	}
+//	@Override
+//	public MemberDTO memberNickName(MemberDTO dto) throws Exception {
+//		return session.selectOne("Member.memberNickName", dto);
+//	}
 	
 	@Override
 	public void Kakaoinsert(HashMap<String, Object> userInfo) {

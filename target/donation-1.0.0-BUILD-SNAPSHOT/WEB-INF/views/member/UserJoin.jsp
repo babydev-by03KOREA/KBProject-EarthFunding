@@ -42,7 +42,7 @@
             <div>
                 <label class="login__set">사용하실 닉네임을 입력하세요.</label>
                 <label>
-                    <input type="text" id="nickName" name="passwd" class="join__input__nickName"/>
+                    <input type="text" id="nickName" name="nickName" class="join__input__nickName"/>
                 </label>
             </div>
             <div class="join__sub">

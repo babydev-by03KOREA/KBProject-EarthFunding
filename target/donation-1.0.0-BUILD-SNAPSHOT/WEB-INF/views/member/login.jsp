@@ -65,7 +65,7 @@
             <div class="SNS">
                 <ul>
                     <li><a href="#"><img src="${cp}/resources/view/img/btnG_long.png" alt="네이버로 로그인" class="SNS__Naver"></a></li>
-                    <li><a href="/Kakao/UserLogin.do"><img src="${cp}/resources/view/img/KakaoBtn.png" alt="카카오로 로그인" class="SNS__Kakao"></a></li>
+                    <li><a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=b516cfd19e1309e1920f8910eedeabc2&redirect_uri=http://localhost:8080/Kakao/UserLogin.do&response_type=code"><img src="${cp}/resources/view/img/KakaoBtn.png" alt="카카오로 로그인" class="SNS__Kakao"></a></li>
                  </ul>
             </div>
         </div>
