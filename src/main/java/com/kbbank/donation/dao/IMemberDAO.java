@@ -8,6 +8,7 @@ import com.kbbank.donation.dto.MemberDTO;
 public interface IMemberDAO {
 	public MemberDTO memberLogin(MemberDTO dto) throws Exception;
 //	public MemberDTO memberNickName(MemberDTO dto) throws Exception;
+	public int idChk(MemberDTO dto) throws Exception;
 	public void Kakaoinsert(HashMap<String, Object> userInfo);
 	public KakaoDTO findKakao(HashMap<String, Object> userInfo);
 	public void memberJoin(MemberDTO dto) throws Exception;

@@ -14,32 +14,41 @@
     <script src="https://kit.fontawesome.com/4163862d0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <img alt="EarthFunding" src="${cp}/resources/view/img/IconLogo.png">
-            <a href="/index.do">KBDontaion</a>
-        </div>
+<nav class="navbar">
+    <div class="navbar__logo">
+        <img alt="EarthFunding" src="${cp}/resources/view/img/IconLogo.png">
+        <a href="/index.do">KBDontaion</a>
+    </div>
 
-        <ul class="navbar__menu">
-            <li><a href="#">지구 시뮬레이션</a></li>
-            <li><a href="#">펀딩하기</a></li>
-            <li><a href="#">펀딩만들기</a></li>
-            <li><a href="#">heal the world</a></li>
-            <li><a href="#">우리의 추구</a></li>
-        </ul>
+    <ul class="navbar__menu">
+        <li><a href="#">지구 시뮬레이션</a></li>
+        <li><a href="#">펀딩하기</a></li>
+        <li><a href="#">펀딩만들기</a></li>
+        <li><a href="#">heal the world</a></li>
+        <li><a href="#">우리의 추구</a></li>
+    </ul>
 
-        <ul class="navbar__icons">
-            <li>
+    <ul class="navbar__icons">
+        <li>
+            <c:if test="${empty sessionScope.nickName}">
                 <i class="fa-solid fa-arrow-right-to-bracket"><a href="/member/login.do">로그인</a></i>
-            </li>
-            <li>
-                <i class="fa-solid fa-file-signature"><a href="/member/UserJoin.do">회원가입</a></i>
-            </li>
-        </ul>
+            </c:if>
+        </li>
+        <li>
+            <c:if test="${sessionScope.nickName != null}">
+                ${sessionScope.nickName}님 환영해요!
+            </c:if>
+        </li>
+        <li>
+            <c:if test="${!empty sessionScope.nickName}">
+                <i class="fa-solid fa-file-signature"><a href="/member/logout.do">로그아웃</a></i>
+            </c:if>
+        </li>
+    </ul>
 
-        <a href="#" class="navbar__toogleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-    </nav>
+    <a href="#" class="navbar__toogleBtn">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</nav>
 </body>
 </html>

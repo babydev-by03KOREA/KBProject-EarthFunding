@@ -25,16 +25,12 @@
 		                 		   , #{nickName, jdbcType=VARCHAR})
 		]]>
     </insert>
-    
-    <!-- Login User nickName 가져오기 작업 중 Error 발생 / 보류 -->
-    
-<!--    <select id="memberNickName" resultType="MemberDTO">-->
-<!--	    <![CDATA[-->
-<!--	        select nickName-->
-<!--	        from KBUSER-->
-<!--	        where userid = #{userid}-->
-<!--	    ]]>-->
-<!--    </select>-->
+
+	<!-- 아이디 중복 체크 -->
+	<select id="idChk" resultType="int">
+		SELECT COUNT(*) FROM KBUSER
+		WHERE USERID = #{userid}
+	</select>
     
     <!-- 
 	    Login For Kakao
