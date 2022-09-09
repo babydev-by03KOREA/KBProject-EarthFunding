@@ -38,9 +38,17 @@ function idOverLap() {
         dataType: "json",
         data: {"userid": $("#userid").val()},
         success: function (data) {
+            let check = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
             if (data === 1) {
                 alert("중복된 아이디입니다.");
-            } else if (data === 0) {
+            }
+            else if ($("#userid").val() === "") {
+                alert("아이디를 입력해주세요.");
+            }
+            else if (check.test($("#userid").val())) {
+                alert("아이디는 영어만 가능해요ㅠㅠ");
+            }
+            else if (data === 0) {
                 $("#idOverLab").attr("value", "Y");
                 alert("사용가능한 아이디입니다.");
             }

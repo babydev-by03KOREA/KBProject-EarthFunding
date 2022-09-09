@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +20,13 @@
             <div>
                 <h1 class="join__title">회원가입</h1>
             </div>
-            <div>
-                <label class="login__set">아이디를 입력하세요.</label>
-                <label>
-                    <input type="text" id="userid" name="userid" class="join__input__ID"/>
-                    <button onclick="idOverLap();" value="N" class="idOverLab" id="idOverLab" type="button">ID 중복확인</button>
-                </label>
-                <%--                <!-- id ajax 중복체크 -->--%>
-                <%--                <span class="id_ok">사용 가능한 아이디입니다.</span>--%>
-                <%--                <span class="id_already">누군가 이 아이디를 사용하고 있어요.</span>--%>
+            <label class="login__set">아이디를 입력하세요.</label>
+            <label class="login__set__info">아이디는 최대 12자리까지 입력 가능합니다.</label>
+            <div class="join__id__form">
+                <div>
+                    <label for="userid"></label><input type="text" id="userid" name="userid" class="join__input__ID" maxlength="12"/>
+                </div>
+                <button onclick="idOverLap();" value="N" class="idOverLab" id="idOverLab" type="button">ID 중복확인</button>
             </div>
             <div>
                 <label class="login__set">비밀번호를 입력하세요.</label>
@@ -49,7 +47,7 @@
                 </label>
             </div>
             <div class="join__sub">
-                <button type="button" class="cancel">메인화면으로</button>
+                <button type="button" class="cancel"><a href="/index.do">메인화면으로</a></button>
                 <input type="submit" id="submit" value="회원가입">
             </div>
         </form>

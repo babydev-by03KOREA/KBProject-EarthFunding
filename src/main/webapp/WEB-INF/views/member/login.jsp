@@ -63,10 +63,20 @@
             </div>
             <hr/>
             <div class="SNS">
+                <div class="snsInfo">
+                    카카오로 3초만에 회원가입!
+                </div>
                 <ul>
-                    <li><a href="#"><img src="${cp}/resources/view/img/btnG_long.png" alt="네이버로 로그인" class="SNS__Naver"></a></li>
                     <li><a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=b516cfd19e1309e1920f8910eedeabc2&redirect_uri=http://localhost:8080/Kakao/UserLogin.do&response_type=code"><img src="${cp}/resources/view/img/KakaoBtn.png" alt="카카오로 로그인" class="SNS__Kakao"></a></li>
                  </ul>
+            </div>
+            <div class="GeneralJoin">
+                <div class="joinInfo">
+                    초간단 30초 일반 회원가입!
+                </div>
+                <div class="joinBtn">
+                    <button type="button" onclick="location.href='/member/UserJoin.do'">일반 회원가입</button>
+                </div>
             </div>
         </div>
     </article>
