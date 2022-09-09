@@ -21,7 +21,12 @@ public class MemberService implements IMemberService{
 		
 		return name;
 	}
-	
+
+	public int idChk(MemberDTO dto) throws Exception {
+		int icChkResult = this.memberDao.idChk(dto);
+		return icChkResult;
+	}
+
 	@Override
 	public String memberNickName(MemberDTO dto) throws Exception {
 		

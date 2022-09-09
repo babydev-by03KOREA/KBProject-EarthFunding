@@ -24,6 +24,11 @@ public class MemberDAO implements IMemberDAO{
 	public String memberNickName(MemberDTO dto) throws Exception {
 		return session.selectOne("Member.memberNickName", dto);
 	}
+
+	public int idChk(MemberDTO dto) throws Exception {
+		int idChkResult = (Integer)this.session.selectOne("Member.idChk", dto);
+		return idChkResult;
+	}
 	
 	@Override
 	public void Kakaoinsert(HashMap<String, Object> userInfo) {
