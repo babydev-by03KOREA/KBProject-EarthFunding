@@ -5,18 +5,18 @@
 <!-- 인터페이스의 이름과 namespace 속성으로 판단. -->
 <mapper namespace="Member">
 	 <!-- 로그인 -->
-    <select id="memberLogin" resultType="MemberDTO">
+    <select id="memberLogin" resultType="Int" parameterType="MemberDTO">
     
 	    <![CDATA[
-	        select USERID, PASSWD, NICKNAME
-	        from KBUSER
+	        select COUNT(*)
+	        from KBUSER 
 	        where userid = #{userid} and passwd = #{passwd}
 	    ]]>
 	    
     </select>
     
     <insert id="register">
-	    <![CDATA[
+	    <![CDATA[ㅂ
 		    INSERT INTO KBUSER (   USERID 
 		   					       , PASSWD
 		   					       , nickName 	)
@@ -25,12 +25,18 @@
 		                 		   , #{nickName, jdbcType=VARCHAR})
 		]]>
     </insert>
-
-	<!-- 아이디 중복 체크 -->
-	<select id="idChk" resultType="int">
-		SELECT COUNT(*) FROM KBUSER
-		WHERE USERID = #{userid}
-	</select>
+    
+    <!-- Login User nickName 가져오기 작업 중 Error 발생 / 보류 -->
+    
+    <!-- <select id="memberNickName" resultType="String" parameterType="MemberDTO">
+    
+	    <![CDATA[
+	        select nickName
+	        from KBUSER
+	        where userid = #{userid}
+	    ]]>
+	    
+    </select> -->
     
     <!-- 
 	    Login For Kakao

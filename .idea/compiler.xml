@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="donation" target="11" />
-      <module name="EarthFunding" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

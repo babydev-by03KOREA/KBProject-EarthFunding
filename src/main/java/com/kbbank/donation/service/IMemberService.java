@@ -5,9 +5,8 @@ import javax.servlet.http.HttpSession;
 import com.kbbank.donation.dto.*;
 
 public interface IMemberService {
-	public MemberDTO memberLogin(MemberDTO dto) throws Exception;
-//	public MemberDTO memberNickName(MemberDTO dto) throws Exception;
-	public int idChk(MemberDTO dto) throws Exception;
+	public int memberLogin(MemberDTO dto) throws Exception;
+	public String memberNickName(MemberDTO dto) throws Exception;
 	public void logOut(HttpSession session);
 	public void memberJoin(MemberDTO dto) throws Exception;
 }

@@ -1,50 +1,22 @@
-$(document).ready(function () {
-    // 취소
-    $(".cancel").on("click", function () {
-        location.href = "/index.do";
-    })
-
-    $("#submit").on("click", function () {
-        if ($("#userid").val() === "") {
-            alert("아이디를 입력해주세요.");
-            $("#userid").focus();
-            return false;
-        }
-        if ($("#passwd").val() === "") {
-            alert("비밀번호를 입력해주세요.");
-            $("#userPass").focus();
-            return false;
-        }
-        if ($("#nickName").val() === "") {
-            alert("닉네임을 입력해주세요.");
-            $("#nickName").focus();
-            return false;
-        }
-
-        let idChkVal = $("#idOverLab").val();
-
-        if (idChkVal === "N") {
-            alert("중복확인 버튼을 눌러주세요.");
-        } else if (idChkVal === "Y") {
-            $("#regForm").submit();
+function checkId(){
+    let id = $('#userid').val(); //id값이 "id"인 입력란의 값을 저장
+    $.ajax({
+        url:'./idCheck', //Controller에서 요청 받을 주소
+        type:'post', //POST 방식으로 전달
+        data:{id:id},
+        success:function(cnt){ //컨트롤러에서 넘어온 cnt값을 받는다
+            if(cnt === 0){ //cnt가 1이 아니면(=0일 경우) -> 사용 가능한 아이디
+                $('.id_ok').css("display","inline-block");
+                $('.id_already').css("display", "none");
+            } else { // cnt가 1일 경우 -> 이미 존재하는 아이디
+                $('.id_already').css("display","inline-block");
+                $('.id_ok').css("display", "none");
+                alert("아이디를 다시 입력해주세요");
+                $('#id').val('');
+            }
+        },
+        error:function(){
+            alert("에러입니다");
         }
     });
-})
-
-function idOverLap() {
-    $.ajax({
-        url: "/member/idCheck.do",
-        type: "post",
-        dataType: "json",
-        data: {"userid": $("#userid").val()},
-        success: function (data) {
-            if (data === 1) {
-                alert("중복된 아이디입니다.");
-            } else if (data === 0) {
-                $("#idOverLab").attr("value", "Y");
-                alert("사용가능한 아이디입니다.");
-            }
-        }
-    })
-
-}
+};
