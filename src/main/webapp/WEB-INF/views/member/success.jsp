@@ -10,7 +10,7 @@
 <body>
 	<h1>로그인에 성공하였습니다!</h1>
 	<h3>
-		${sessionScope.LoginUser}님 환영해요!
+		${loginUser}님 환영해요!
 	</h3>
 	<h3><a href="/index.do" style="text-decoration:none;">메인화면으로 돌아가기</a></h3>
 	<h3><a href="/member/logout.do" style="text-decoration:none;">logout</a></h3>

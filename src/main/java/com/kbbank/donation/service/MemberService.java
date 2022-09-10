@@ -15,11 +15,8 @@ public class MemberService implements IMemberService{
 	MemberDAO memberDao;
 
 	@Override
-	public int memberLogin(MemberDTO dto) throws Exception {
-		
-		int name = memberDao.memberLogin(dto);
-		
-		return name;
+	public MemberDTO memberLogin(MemberDTO dto) throws Exception {
+		return memberDao.memberLogin(dto);
 	}
 
 	public int idChk(MemberDTO dto) throws Exception {

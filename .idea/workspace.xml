@@ -10,17 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-security.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/UserJoin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/UserJoin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IMemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IMemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/userLogin-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/userLogin-mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/UserJoinAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/UserJoinAjax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/UserJoin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/UserJoin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/javascript/UserJoinAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/javascript/UserJoinAjax.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -200,17 +204,36 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="aws.lambda" factoryName="Local">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JUnit.donation의 전부" />
@@ -242,7 +265,8 @@
       <workItem from="1662564449525" duration="4187000" />
       <workItem from="1662570819968" duration="315000" />
       <workItem from="1662571147684" duration="1457000" />
-      <workItem from="1662724283722" duration="11358000" />
+      <workItem from="1662724283722" duration="11512000" />
+      <workItem from="1662779707282" duration="7226000" />
     </task>
     <servers />
   </component>

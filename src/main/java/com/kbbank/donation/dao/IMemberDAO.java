@@ -6,7 +6,7 @@ import com.kbbank.donation.dto.KakaoDTO;
 import com.kbbank.donation.dto.MemberDTO;
 
 public interface IMemberDAO {
-	public int memberLogin(MemberDTO dto) throws Exception;
+	public MemberDTO memberLogin(MemberDTO dto) throws Exception;
 	int idChk(MemberDTO var1) throws Exception;
 	public String memberNickName(MemberDTO dto) throws Exception;
 	public void Kakaoinsert(HashMap<String, Object> userInfo);

@@ -16,7 +16,7 @@ public class MemberDAO implements IMemberDAO{
 	private SqlSessionTemplate session;
 
 	@Override
-	public int memberLogin(MemberDTO dto) throws Exception {
+	public MemberDTO memberLogin(MemberDTO dto) throws Exception {
 		return session.selectOne("Member.memberLogin", dto);
 	}
 	

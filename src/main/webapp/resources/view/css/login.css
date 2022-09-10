@@ -21,12 +21,12 @@ body {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: lightblue;
 }
 
 .login__group {
     width: 500px;
-    height: 675px;
+    height: 750px;
     padding: 40px 60px;
     margin: 0 auto;
     /* 기본으로 잡히는 margin값이 있음! */
