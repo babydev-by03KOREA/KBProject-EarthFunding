@@ -10,20 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/mainIndex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/img/factory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/img/polar-bear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/img/stop-global.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/mainIndex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IMemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IMemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/userLogin-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/userLogin-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kbbank/donation/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kbbank/donation/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,8 @@
         <option value="Class" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -68,27 +67,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Project.color&quot;: &quot;38372c&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/parkhyeongju/EarthDonation/EarthFunding&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2689655&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f4a04b615f41c2f330476ac174c64aad&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Project.color": "38372c",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/parkhyeongju/EarthDonation/EarthFunding/src/main/webapp/resources/view/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2689655",
+    "spring.configuration.checksum": "f4a04b615f41c2f330476ac174c64aad"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/view/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/view/img" />
     </key>
@@ -266,7 +269,7 @@
       <workItem from="1662570819968" duration="315000" />
       <workItem from="1662571147684" duration="1457000" />
       <workItem from="1662724283722" duration="11512000" />
-      <workItem from="1662779707282" duration="7226000" />
+      <workItem from="1662779707282" duration="9407000" />
     </task>
     <servers />
   </component>
