@@ -83,14 +83,6 @@ body {
     color: midnightblue;
 }
 
-#mail_check_input_box_false{
-    background-color:#ebebe4;
-}
-
-#mail_check_input_box_true{
-    background-color:white;
-}
-
 /* BTN 없는 INPUT FORM */
 .join__input__PWD, .join__input__nickName, .join__rechk__PWD , .join__input__eMail{
     width: 470px;

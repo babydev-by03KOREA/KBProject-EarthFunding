@@ -54,7 +54,7 @@ function idOverLap() {
 }
 
 /* 인증번호 이메일 전송 */
-$(document).on("click", "#emailSend" ,function() {
+$(document).on("click", "#emailSend", function () {
 
     //  이메일 입력란
     const email = $('#email__form').val();
@@ -65,7 +65,7 @@ $(document).on("click", "#emailSend" ,function() {
 
     alert("입력하신 이메일로 인증번호를 보냈어요! >>" + email);
 
-    if(email === ''){
+    if (email === '') {
         alert('이메일을 입력해주세요!');
     }
 
@@ -73,13 +73,34 @@ $(document).on("click", "#emailSend" ,function() {
 
         type: "GET",
         url: "/member/emailCheck.do?email=" + email,
-        success:function(data){
+        success: function (data) {
             // console.log("data : " + data);
             emailChkNum.attr("disabled", false);
-            let code = data;
+            code = data;
             alert('인증번호가 전송되었습니다.');
         }
 
     });
 
 });
+
+/* 인증번호 비교
+* $(document).on("click", "#emailSend" ,function() { */
+
+$("#mail_check_input").blur(function () {
+
+    const inputCode = $("#mail_check_input").val();        // 입력코드
+    const $checkResult = $("#mail_check_warn");    // 비교 결과
+
+    if (inputCode === code) {                            // 일치할 경우
+        $checkResult.html("인증번호가 일치합니다.");
+        $checkResult.css('color', 'green');
+        $('#emailSend').attr('disabled', true);
+        $('#email__form').attr('readonly', true);
+    } else {                                            // 일치하지 않을 경우
+        $checkResult.html("인증번호를 다시 확인해주세요.");
+        $checkResult.css('color', 'red');
+    }
+});
+
+

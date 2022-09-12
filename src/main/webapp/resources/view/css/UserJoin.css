@@ -83,14 +83,6 @@ body {
     color: midnightblue;
 }
 
-.correct{
-    color : green;
-}
-
-.incorrect{
-    color : red;
-}
-
 /* BTN 없는 INPUT FORM */
 .join__input__PWD, .join__input__nickName, .join__rechk__PWD , .join__input__eMail{
     width: 470px;
