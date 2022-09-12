@@ -56,11 +56,14 @@ function idOverLap() {
 /* 인증번호 이메일 전송 */
 function mailCheck() {
     const email = document.getElementById('email__form').value;
-    alert(email);
+
     $.ajax({
 
         type: "GET",
-        url: "/member/emailCheck.do?email=" + email
+        url: "/member/emailCheck.do?email=" + email,
+        success:function(data){
+            console.log("data : " + data);
+        }
 
     });
 }

@@ -36,10 +36,11 @@
 
 	<!-- naver mail 설정 -->
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-		<property name="host" value="smtp.naver.com"/> <!-- 메일서버 호스트 -->
-		<property name="port" value="465"/> <!-- 메일서버 포트번호 -->
-		<property name="username" value="benny6125@naver.com"/> <!-- 자신의 이메일 -->
-		<property name="password" value="616125Os!/"/> <!-- 자신의 비밀번호 -->
+		<property name="host" value="smtp.gmail.com"/> <!-- 메일서버 호스트 -->
+		<property name="port" value="587"/> <!-- 메일서버 포트번호 -->
+		<property name="username" value="benny1234567859@gmail.com"/> <!-- 자신의 이메일 -->
+		<property name="defaultEncoding" value="utf-8" />
+		<property name="password" value="gmrfojccgerbwgmo"/> <!-- 자신의 비밀번호 -->
 		<!-- 보안연결 SSL과 관련된 설정 -->
 		<property name="javaMailProperties">
 			<props>

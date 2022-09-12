@@ -108,7 +108,7 @@ public class MemberController {
     /* 이메일 인증 */
     @RequestMapping(value="/emailCheck.do", method=RequestMethod.GET)
     @ResponseBody
-    public void mailCheckGET(String email) throws Exception{
+    public String mailCheckGET(String email) throws Exception{
 
         /* 뷰(View)로부터 넘어온 데이터 확인 */
         logger.info("이메일 데이터 전송 확인");
@@ -130,19 +130,23 @@ public class MemberController {
                         "<br>" +
                         "해당 인증번호를 인증번호 확인란에 기입하여 주세요.";
 
-        try {
+//        try {
+//
+//            MimeMessage message = mail.createMimeMessage();
+//            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+//            helper.setFrom(setFrom);
+//            helper.setTo(toMail);
+//            helper.setSubject(title);
+//            helper.setText(content,true);
+//            mail.send(message);
+//
+//        }catch(Exception e) {
+//            e.printStackTrace();
+//        }
 
-            MimeMessage message = mail.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-            helper.setFrom(setFrom);
-            helper.setTo(toMail);
-            helper.setSubject(title);
-            helper.setText(content,true);
-            mail.send(message);
+        String num = Integer.toString(checkNum);
 
-        }catch(Exception e) {
-            e.printStackTrace();
-        }
+        return num;
 
     }
 
