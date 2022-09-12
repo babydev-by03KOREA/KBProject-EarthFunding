@@ -46,14 +46,15 @@
                 <div>
                     <label for="email__form"></label><input type="email" id="email__form" name="email__form" class="email__input" />
                 </div>
-                <button onclick="mailCheck()" class="emailSend" id="emailSend" type="button">인증번호 전송</button>
+                <button class="emailSend" id="emailSend" type="button">인증번호 전송</button>
             </div>
             <div class="join__emailchk__form">
-                <div>
-                    <label for="email_chk"></label><input type="text" id="email_chk" name="email" class="join__rechk__email" disabled="disabled" />
+                <div class="mail_check_input_box">
+                    <label for="mail_check_input"></label><input type="text" id="mail_check_input" name="email" class="mail_check_input" disabled="disabled" maxlength="6" />
                 </div>
                 <button value="N" class="emailOverLap" id="emailOverLap" type="button">인증번호 확인</button>
             </div>
+            <span id="mail-check-warn"></span>
             <div>
                 <label class="login__set">사용하실 닉네임을 입력하세요.</label>
                 <label>

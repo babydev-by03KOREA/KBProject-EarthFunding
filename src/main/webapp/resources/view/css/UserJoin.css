@@ -41,7 +41,7 @@ body {
 }
 
 /**/
-.join__input__ID, .email__input, .join__rechk__email {
+.join__input__ID, .email__input, .mail_check_input {
     width: 350px;
     height: 47px;
     font-size: 20px;
@@ -83,12 +83,12 @@ body {
     color: midnightblue;
 }
 
-#mail_check_input_box_false{
-    background-color:#ebebe4;
+.correct{
+    color : green;
 }
 
-#mail_check_input_box_true{
-    background-color:white;
+.incorrect{
+    color : red;
 }
 
 /* BTN 없는 INPUT FORM */

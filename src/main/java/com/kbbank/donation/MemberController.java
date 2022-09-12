@@ -130,19 +130,19 @@ public class MemberController {
                         "<br>" +
                         "해당 인증번호를 인증번호 확인란에 기입하여 주세요.";
 
-//        try {
-//
-//            MimeMessage message = mail.createMimeMessage();
-//            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-//            helper.setFrom(setFrom);
-//            helper.setTo(toMail);
-//            helper.setSubject(title);
-//            helper.setText(content,true);
-//            mail.send(message);
-//
-//        }catch(Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+
+            MimeMessage message = mail.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+            helper.setFrom(setFrom);
+            helper.setTo(toMail);
+            helper.setSubject(title);
+            helper.setText(content,true);
+            mail.send(message);
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
 
         String num = Integer.toString(checkNum);
 

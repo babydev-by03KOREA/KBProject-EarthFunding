@@ -12,11 +12,13 @@
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/UserJoin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/UserJoin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/UserJoin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/UserJoinAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/UserJoinAjax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kbbank/donation/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kbbank/donation/MemberController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/UserJoin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/member/UserJoin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/css/UserJoin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/javascript/UserJoinAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/resources/view/javascript/UserJoinAjax.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +272,7 @@
       <workItem from="1662724283722" duration="11512000" />
       <workItem from="1662779707282" duration="11896000" />
       <workItem from="1662970145770" duration="7479000" />
-      <workItem from="1662981810200" duration="9085000" />
+      <workItem from="1662981810200" duration="14901000" />
     </task>
     <servers />
   </component>

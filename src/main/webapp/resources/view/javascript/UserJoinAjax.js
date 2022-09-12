@@ -54,16 +54,32 @@ function idOverLap() {
 }
 
 /* 인증번호 이메일 전송 */
-function mailCheck() {
-    const email = document.getElementById('email__form').value;
+$(document).on("click", "#emailSend" ,function() {
+
+    //  이메일 입력란
+    const email = $('#email__form').val();
+    //  인증번호 입력란    input type 어쩌고
+    const emailChkNum = $('.mail_check_input');
+    //  인증번호 입력란 박스
+    // let emailChkArea = document.querySelector('.mail_check_input_box');
+
+    alert("입력하신 이메일로 인증번호를 보냈어요! >>" + email);
+
+    if(email === ''){
+        alert('이메일을 입력해주세요!');
+    }
 
     $.ajax({
 
         type: "GET",
         url: "/member/emailCheck.do?email=" + email,
         success:function(data){
-            console.log("data : " + data);
+            // console.log("data : " + data);
+            emailChkNum.attr("disabled", false);
+            let code = data;
+            alert('인증번호가 전송되었습니다.');
         }
 
     });
-}
+
+});
