@@ -21,8 +21,9 @@ body {
 
 .UserJoin {
     width: 500px;
-    height: 675px;
-    padding: 40px 60px;
+    height: 880px;
+    /* 40px 45px 40px 60px */
+    padding: 40px 45px 40px 60px;
     margin: 0 auto;
     /* 기본으로 잡히는 margin값이 있음! */
     background-color: #f0f4f5;
@@ -32,14 +33,15 @@ body {
     margin-bottom: 26px;
 }
 
-.join__id__form {
+.join__id__form, .join__email__form, .join__emailchk__form {
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.join__input__ID {
+/**/
+.join__input__ID, .email__input, .join__rechk__email {
     width: 350px;
     height: 47px;
     font-size: 20px;
@@ -53,7 +55,8 @@ body {
     border-bottom: 2px solid #313030;
 }
 
-.join__id__form .idOverLab {
+/* AJAX BUTTON */
+.join__id__form .idOverLab, .join__emailchk__form .emailOverLap, .join__email__form .emailSend {
     font-size: 16px;
     font-weight: 400;
     margin-top: 0.8rem;
@@ -80,7 +83,16 @@ body {
     color: midnightblue;
 }
 
-.join__input__PWD, .join__input__nickName, .join__rechk__PWD {
+#mail_check_input_box_false{
+    background-color:#ebebe4;
+}
+
+#mail_check_input_box_true{
+    background-color:white;
+}
+
+/* BTN 없는 INPUT FORM */
+.join__input__PWD, .join__input__nickName, .join__rechk__PWD , .join__input__eMail{
     width: 470px;
     height: 47px;
     font-size: 20px;

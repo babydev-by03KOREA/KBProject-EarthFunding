@@ -84,7 +84,6 @@
 					<artifactId>jmxri</artifactId>
 				</exclusion>
 			</exclusions>
-			<!--<scope>runtime</scope>-->
 		</dependency>
 		
 		<!-- 시큐리티 관련 -->

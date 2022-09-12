@@ -1,11 +1,17 @@
 package com.kbbank.donation;
 
 import javax.inject.Inject;
+import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,13 +20,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.kbbank.donation.dto.MemberDTO;
 import com.kbbank.donation.service.MemberService;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.PrintWriter;
+import java.util.Random;
 
 @Controller
 @RequestMapping(value = "/member")
 public class MemberController {
+
+    private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 
     @ModelAttribute("cp")
     public String getContextPath(HttpServletRequest request) {
@@ -29,10 +36,13 @@ public class MemberController {
     }
 
     @Inject
-    MemberService service;
+    private MemberService service;
 
     @Inject
-    BCryptPasswordEncoder bc;
+    private BCryptPasswordEncoder bc;
+
+    @Autowired
+    private JavaMailSender mail;
 
     //	회원가입 처리 → 이동시에는 Get Method 타고가기
     @RequestMapping(value = "UserJoin.do", method = RequestMethod.GET)
@@ -93,6 +103,47 @@ public class MemberController {
     public int idOverLap(MemberDTO dto) throws Exception {
         int idOverLap = this.service.idChk(dto);
         return idOverLap;
+    }
+
+    /* 이메일 인증 */
+    @RequestMapping(value="/emailCheck.do", method=RequestMethod.GET)
+    @ResponseBody
+    public void mailCheckGET(String email) throws Exception{
+
+        /* 뷰(View)로부터 넘어온 데이터 확인 */
+        logger.info("이메일 데이터 전송 확인");
+        logger.info("인증번호 : " + email);
+
+        /* 난수 생성 */
+        Random random = new Random();
+        int checkNum = random.nextInt(888888) + 111111;
+        logger.info("인증번호 " + checkNum);
+
+        /* 이메일 보내기 */
+        String setFrom = "sjinjin6@naver.com";
+        String toMail = email;
+        String title = "회원가입 인증 이메일 입니다.";
+        String content =
+                "더 나은 세상을 위해 동참해주셔서 감사합니다." +
+                        "<br><br>" +
+                        "인증 번호는 " + "<h2><strong>" + checkNum + "</h2></strong>" + " 입니다." +
+                        "<br>" +
+                        "해당 인증번호를 인증번호 확인란에 기입하여 주세요.";
+
+        try {
+
+            MimeMessage message = mail.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
+            helper.setFrom(setFrom);
+            helper.setTo(toMail);
+            helper.setSubject(title);
+            helper.setText(content,true);
+            mail.send(message);
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     @RequestMapping("logout.do")

@@ -40,6 +40,20 @@
                     <input type="password" id="passwdchk" name="passwdchk" class="join__rechk__PWD"/>
                 </label>
             </div>
+            <label class="login__set">사용하실 이메일을 입력하세요.</label>
+            <label class="login__set__info">아이디 및 비밀번호 찾기에 사용됩니다.</label>
+            <div class="join__email__form">
+                <div>
+                    <label for="email__form"></label><input type="email" id="email__form" name="email__form" class="email__input" />
+                </div>
+                <button onclick="mailCheck()" class="emailSend" id="emailSend" type="button">인증번호 전송</button>
+            </div>
+            <div class="join__emailchk__form">
+                <div>
+                    <label for="email_chk"></label><input type="text" id="email_chk" name="email" class="join__rechk__email" disabled="disabled" />
+                </div>
+                <button value="N" class="emailOverLap" id="emailOverLap" type="button">인증번호 확인</button>
+            </div>
             <div>
                 <label class="login__set">사용하실 닉네임을 입력하세요.</label>
                 <label>
