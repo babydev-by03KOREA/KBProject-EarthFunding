@@ -6,6 +6,7 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="shortcut icon" href="${cp}/resources/view/img/IconLogo.png"  type="image/x-icon"> <!--추가-->
     <link rel="stylesheet" href="${cp}/resources/view/css/mainIndex.css">
 	<script src="${cp}/resources/view/javascript/mainIndex.js" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

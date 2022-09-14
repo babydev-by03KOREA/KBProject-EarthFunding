@@ -15,7 +15,7 @@ $(document).ready(function () {
             $("#userPass").focus();
             return false;
         }
-        if ($("#nickName").val() === "") {
+        if ($("#email__form").val() === "") {
             alert("닉네임을 입력해주세요.");
             $("#nickName").focus();
             return false;
@@ -28,8 +28,22 @@ $(document).ready(function () {
         } else if (idChkVal === "Y") {
             $("#regForm").submit();
         }
+
     });
-})
+});
+
+$(document).ready(function(){
+    $('.join__pwd__form i').on('click',function(){
+        $('input').toggleClass('active');
+        if($('input').hasClass('active')){
+            $(this).attr('class',"fa fa-eye-slash fa-lg")
+                .prev('input').attr('type',"text");
+        }else{
+            $(this).attr('class',"fa fa-eye fa-lg")
+                .prev('input').attr('type','password');
+        }
+    });
+});
 
 function idOverLap() {
     $.ajax({
@@ -61,7 +75,6 @@ $(document).on("click", "#emailSend", function () {
     //  인증번호 입력란    input type 어쩌고
     const emailChkNum = $('.mail_check_input');
     //  인증번호 입력란 박스
-    // let emailChkArea = document.querySelector('.mail_check_input_box');
 
     alert("입력하신 이메일로 인증번호를 보냈어요! >>" + email);
 
@@ -84,23 +97,19 @@ $(document).on("click", "#emailSend", function () {
 
 });
 
-/* 인증번호 비교
-* $(document).on("click", "#emailSend" ,function() { */
+function emailCheck() {
+    let inputCode = document.getElementById('mail_check_input').value;
 
-$("#mail_check_input").blur(function () {
-
-    const inputCode = $("#mail_check_input").val();        // 입력코드
-    const $checkResult = $("#mail_check_warn");    // 비교 결과
-
-    if (inputCode === code) {                            // 일치할 경우
-        $checkResult.html("인증번호가 일치합니다.");
-        $checkResult.css('color', 'green');
-        $('#emailSend').attr('disabled', true);
-        $('#email__form').attr('readonly', true);
-    } else {                                            // 일치하지 않을 경우
-        $checkResult.html("인증번호를 다시 확인해주세요.");
-        $checkResult.css('color', 'red');
+    if (inputCode === '') {
+        alert('');
     }
-});
 
+    if (inputCode === code) {
+        alert("Email 인증에 성공하였습니다!");
+        return true;
+    } else {
+        alert("Email 인증에 실패하였습니다. 인증번호를 다시 확인해주세요!");
+        return false;
+    }
+}
 
