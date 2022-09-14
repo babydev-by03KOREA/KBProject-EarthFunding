@@ -20,21 +20,26 @@
         <div class="slide_div">
             <div>
                 <a href="/donation/polarBear.do">
-                    <img src="${cp}/resources/view/img/earthBanner/polar.jpg" />
+                    <img src="${cp}/resources/view/img/pbear.jpg" />
                 </a>
             </div>
             <div>
                 <a href="/donation/turtle.do">
-                    <img src="${cp}/resources/view/img/earthBanner/turtle.jpg" />
+                    <img src="${cp}/resources/view/img/turtle.jpg" />
                 </a>
             </div>
             <div>
                 <a href="/donation/factory.do">
-                    <img src="${cp}/resources/view/img/earthBanner/factory.jpg" />
+                    <img src="${cp}/resources/view/img/factory.jpg" />
                 </a>
             </div>
         </div>
+        <div class="card-tab-menu">
+            <div class="slick-prev slick-arrow"></div>
+            <div class="slick-next slick-arrow"></div>
+        </div>
     </div>
+    <h1><strong>기부는 이렇게 이뤄져요</strong></h1>
 </section>
 <%@ include file="./footer.jsp" %>
 </body>

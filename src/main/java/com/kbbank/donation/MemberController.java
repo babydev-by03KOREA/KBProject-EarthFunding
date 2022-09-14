@@ -79,18 +79,24 @@ public class MemberController {
 
     // 로그인 post
     @RequestMapping(value = "/login_check.do", method = RequestMethod.POST)
-    public String login(MemberDTO dto, Model model) throws Exception{
+    public String login(HttpServletRequest request, MemberDTO dto, Model model) throws Exception{
 
         MemberDTO login = service.memberLogin(dto);
+
+        HttpSession session = request.getSession();
+        MemberDTO dtoSession = service.memberLogin(dto);
 
         if(login != null && bc.matches(dto.getPasswd(), login.getPasswd())) {
             // model은 request영역이다. 그것을 상단의 @SessionAttributes가 session영역으로 바꿔준다.
             // request → session
             model.addAttribute("loginUser", login.getUserid());
-            return "member/success";
         } else {
             return "member/loginError";
         }
+
+        session.setAttribute("member", dtoSession);
+
+        return "redirect:/index.do";
     }
 
     @ResponseBody

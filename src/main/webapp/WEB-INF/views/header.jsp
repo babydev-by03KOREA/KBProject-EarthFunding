@@ -28,8 +28,16 @@
         </ul>
 
         <ul class="navbar__icons">
-            <li><i class="fa-solid fa-arrow-right-to-bracket"><a href="/member/login.do">로그인</a></i></li>
-            <li><i class="fa-solid fa-file-signature"><a href="/member/UserJoin.do">회원가입</a></i></li>
+            <!-- 로그인 하지 않은 상태 -->
+            <c:if test = "${member == null }">
+                <li><i class="fa-solid fa-arrow-right-to-bracket"><a href="/member/login.do">로그인</a></i></li>
+                <li><i class="fa-solid fa-file-signature"><a href="/member/UserJoin.do">회원가입</a></i></li>
+            </c:if>
+
+            <!-- 로그인한 상태 -->
+            <c:if test="${ member != null }">
+                ${member.userid}님 환영합니다!
+            </c:if>
         </ul>
 
         <a href="#" class="navbar__toogleBtn">
