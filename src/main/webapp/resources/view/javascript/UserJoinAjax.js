@@ -25,8 +25,20 @@ $(document).ready(function () {
 
         if (idChkVal === "N") {
             alert("중복확인 버튼을 눌러주세요.");
+            return false;
         } else if (idChkVal === "Y") {
             $("#regForm").submit();
+            return true;
+        }
+
+        let emailChkVal = $(".emailchk").val();
+
+        if (emailChkVal === "N") {
+            alert("이메일 인증을 받아주세요!");
+            return false;
+        } else if (emailChkVal === "Y") {
+            $("#regForm").submit();
+            return true;
         }
 
     });

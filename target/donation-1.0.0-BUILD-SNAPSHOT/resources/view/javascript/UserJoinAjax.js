@@ -16,7 +16,7 @@ $(document).ready(function () {
             return false;
         }
         if ($("#email__form").val() === "") {
-            alert("닉네임을 입력해주세요.");
+            alert("Email 주소를 입력해주세요.");
             $("#nickName").focus();
             return false;
         }
@@ -25,8 +25,20 @@ $(document).ready(function () {
 
         if (idChkVal === "N") {
             alert("중복확인 버튼을 눌러주세요.");
+            return false;
         } else if (idChkVal === "Y") {
             $("#regForm").submit();
+            return true;
+        }
+
+        let emailChkVal = $(".emailchk").val();
+
+        if (emailChkVal === "N") {
+            alert("이메일 인증을 받아주세요!");
+            return false;
+        } else if (emailChkVal === "Y") {
+            $("#regForm").submit();
+            return true;
         }
 
     });
@@ -83,7 +95,6 @@ $(document).on("click", "#emailSend", function () {
     }
 
     $.ajax({
-
         type: "GET",
         url: "/member/emailCheck.do?email=" + email,
         success: function (data) {
@@ -92,17 +103,12 @@ $(document).on("click", "#emailSend", function () {
             code = data;
             alert('인증번호가 전송되었습니다.');
         }
-
     });
 
 });
 
 function emailCheck() {
     let inputCode = document.getElementById('mail_check_input').value;
-
-    if (inputCode === '') {
-        alert('');
-    }
 
     if (inputCode === code) {
         alert("Email 인증에 성공하였습니다!");

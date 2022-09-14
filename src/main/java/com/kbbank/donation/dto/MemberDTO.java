@@ -6,7 +6,7 @@ public class MemberDTO {
 	
 	private String userid;
 	private String passwd;
-	private String nickName;
+	private String mailAddress;
 	private Date regDate;
 	
 	public String getUserid() {
@@ -25,14 +25,14 @@ public class MemberDTO {
 		this.passwd = passwd;
 	}
 
-	public String getNickName() {
-		return nickName;
+	public String getMailAddress() {
+		return mailAddress;
 	}
 
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
+	public void setMailAddress(String mailAddress) {
+		this.mailAddress = mailAddress;
 	}
-	
+
 	public Date getRegDate() {
 		return regDate;
 	}
@@ -43,8 +43,11 @@ public class MemberDTO {
 
 	@Override
 	public String toString() {
-		return "MemberDTO [userid=" + userid + ", passwd=" + passwd + ", nickName=" + nickName + ", regDate=" + regDate
-				+ "]";
+		return "MemberDTO{" +
+				"userid='" + userid + '\'' +
+				", passwd='" + passwd + '\'' +
+				", mailAddress='" + mailAddress + '\'' +
+				", regDate=" + regDate +
+				'}';
 	}
-
 }

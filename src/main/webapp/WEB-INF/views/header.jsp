@@ -16,7 +16,7 @@
     <nav class="navbar">
         <div class="navbar__logo">
             <img alt="EarthFunding" src="${cp}/resources/view/img/IconLogo.png">
-            <a href="/index.do">KBDontaion</a>
+            <a href="/index.do">EarthFunding</a>
         </div>
 
         <ul class="navbar__menu">

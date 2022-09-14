@@ -2,9 +2,7 @@ package com.kbbank.donation;
 
 import javax.inject.Inject;
 import javax.mail.internet.MimeMessage;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -36,13 +34,13 @@ public class MemberController {
     }
 
     @Inject
-    private MemberService service;
+    MemberService service;
 
     @Inject
-    private BCryptPasswordEncoder bc;
+    BCryptPasswordEncoder bc;
 
     @Autowired
-    private JavaMailSender mail;
+    JavaMailSender mail;
 
     //	회원가입 처리 → 이동시에는 Get Method 타고가기
     @RequestMapping(value = "UserJoin.do", method = RequestMethod.GET)
@@ -88,7 +86,7 @@ public class MemberController {
         if(login != null && bc.matches(dto.getPasswd(), login.getPasswd())) {
             // model은 request영역이다. 그것을 상단의 @SessionAttributes가 session영역으로 바꿔준다.
             // request → session
-            model.addAttribute("loginUser", login.getNickName());
+            model.addAttribute("loginUser", login.getUserid());
             return "member/success";
         } else {
             return "member/loginError";

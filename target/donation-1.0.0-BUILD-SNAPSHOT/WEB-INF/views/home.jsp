@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>함께 만들어가요 아름다운 지구</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="shortcut icon" href="${cp}/resources/view/img/IconLogo.png"  type="image/x-icon"> <!--추가-->
     <link rel="stylesheet" href="${cp}/resources/view/css/mainIndex.css">
@@ -19,18 +19,18 @@
     <div class="slide_div_wrap">
         <div class="slide_div">
             <div>
-                <a>
-                    <img src="${cp}/resources/view/img/polar-bear.jpg" />
+                <a href="/donation/polarBear.do">
+                    <img src="${cp}/resources/view/img/earthBanner/polar.jpg" />
                 </a>
             </div>
             <div>
-                <a>
-                    <img src="${cp}/resources/view/img/pyramid.jpg" />
+                <a href="/donation/turtle.do">
+                    <img src="${cp}/resources/view/img/earthBanner/turtle.jpg" />
                 </a>
             </div>
             <div>
-                <a>
-                    <img src="${cp}/resources/view/img/factory.jpg" />
+                <a href="/donation/factory.do">
+                    <img src="${cp}/resources/view/img/earthBanner/factory.jpg" />
                 </a>
             </div>
         </div>

@@ -40,16 +40,16 @@
             <label class="login__set__info">아이디 및 비밀번호 찾기에 사용됩니다.</label>
             <div class="join__email__form">
                 <div>
-                    <label for="email__form"></label><input type="email" id="email__form" name="email__form" class="email__input" />
+                    <label for="email__form"></label><input type="email" id="email__form" name="mailAddress" class="email__input" />
                 </div>
                 <button class="emailSend" id="emailSend" type="button">인증번호 전송</button>
             </div>
             <div class="join__emailchk__form">
                 <label class="login__set">매일로 발송된 인증번호를 입력해주세요.</label>
                 <div class="mail_check_input_box">
-                    <label for="mail_check_input"></label><input type="text" id="mail_check_input" name="email" class="mail_check_input" disabled="disabled" maxlength="6" />
+                    <label for="mail_check_input"></label><input type="text" id="mail_check_input" class="mail_check_input" disabled="disabled" maxlength="6" />
                 </div>
-                <button onclick="emailCheck()" class="emailchk" type="button">인증번호 확인</button>
+                <button onclick="emailCheck()" value = "N" class="emailchk" type="button">인증번호 확인</button>
             </div>
             <div class="join__sub">
                 <button type="button" class="cancel"><a href="/index.do">메인화면으로</a></button>
