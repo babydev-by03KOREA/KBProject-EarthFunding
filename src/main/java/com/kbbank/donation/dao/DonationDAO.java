@@ -1,15 +1,17 @@
 package com.kbbank.donation.dao;
 
 import com.kbbank.donation.dto.DonationDTO;
-import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Controller;
 
 import javax.inject.Inject;
 import java.util.List;
 
+@Controller
 public class DonationDAO implements IDonationDAO{
 
     @Inject
-    private SqlSession session;
+    private SqlSessionTemplate session;
 
     private final String statement = "Donation";
 

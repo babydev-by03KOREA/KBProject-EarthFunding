@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!doctype html>
 <head>
     <link rel="shortcut icon" href="${cp}/resources/view/img/IconLogo.png" type="image/x-icon"> <!--추가-->
@@ -11,6 +12,9 @@
 <%@ include file="../header.jsp" %>
 <section>
     <h1><strong>원하는 펀딩을 선택하세요</strong></h1>
+    <c:forEach items="${dto}" var="list">
+        <h1>${dto.fundingName}</h1>
+    </c:forEach>
     <div class="funding_list">
         <div class="product1">
             <a href="/donation/polarBear.do"><h3>북극곰에 내집마련 프로젝트 🏡</h3></a>
