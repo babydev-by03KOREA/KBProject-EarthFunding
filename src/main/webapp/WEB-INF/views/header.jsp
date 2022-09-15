@@ -16,12 +16,12 @@
     <nav class="navbar">
         <div class="navbar__logo">
             <img alt="EarthFunding" src="${cp}/resources/view/img/IconLogo.png">
-            <a href="/index.do">EarthFunding</a>
+            <a href="/index.do">EarthDonation</a>
         </div>
 
         <ul class="navbar__menu">
             <li><a href="#">지구 시뮬레이션</a></li>
-            <li><a href="#">펀딩하기</a></li>
+            <li><a href="/funding/list.do">펀딩하기</a></li>
             <li><a href="#">펀딩만들기</a></li>
             <li><a href="#">heal the world</a></li>
             <li><a href="#">우리의 추구</a></li>

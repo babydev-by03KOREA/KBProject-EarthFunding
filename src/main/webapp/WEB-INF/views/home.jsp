@@ -39,7 +39,7 @@
             <div class="slick-next slick-arrow"></div>
         </div>
     </div>
-    <h2><strong>기부 진행방법🌱</strong></h2>
+    <h2><strong>기부 진행방법 🌱</strong></h2>
     <div class="donation_progress">
         <div>
             <img src="${cp}/resources/view/img/donationProgress.png" alt="기부 진행 한눈에">

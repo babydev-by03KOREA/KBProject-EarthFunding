@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/donation/*")
@@ -11,16 +12,24 @@ public class DonationController {
 
     private static final Logger logger = LoggerFactory.getLogger(DonationController.class);
 
-    @RequestMapping("FundingList.do")
-    public String fundingList() {
-        logger.info("펀딩하기 접근");
+    @RequestMapping(value = "list.do", method = RequestMethod.GET)
+    public String fundingList() throws Exception {
+        logger.info("funding List Approach");
 
-        return "donation/donationlist";
+        return "Donation/list";
     }
 
-    @RequestMapping("polarBear.do")
+    @RequestMapping(value = "polarBear.do", method = RequestMethod.GET)
     public String PolarBear() {
+        logger.info("polarBear Donation Approach");
 
-        return "donation/polarBear";
+        return "Donation/polarBear";
+    }
+
+    @RequestMapping(value = "turtle.do", method = RequestMethod.GET)
+    public String turtle() {
+        logger.info("polarBear Donation Approach");
+
+        return "Donation/turtle";
     }
 }
