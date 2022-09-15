@@ -36,7 +36,8 @@
 
             <!-- 로그인한 상태 -->
             <c:if test="${ member != null }">
-                ${member.userid}님 환영합니다!
+                ${member.userid}님 환영합니다! &nbsp; &nbsp;
+                <a href="/member/logout.do" style="text-decoration: none">로그아웃</a>
             </c:if>
         </ul>
 

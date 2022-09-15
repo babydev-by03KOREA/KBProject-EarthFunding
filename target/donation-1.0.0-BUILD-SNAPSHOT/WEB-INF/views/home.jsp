@@ -39,7 +39,12 @@
             <div class="slick-next slick-arrow"></div>
         </div>
     </div>
-    <h1><strong>기부는 이렇게 이뤄져요</strong></h1>
+    <h2><strong>기부 진행방법🌱</strong></h2>
+    <div class="donation_progress">
+        <div>
+            <img src="${cp}/resources/view/img/donationProgress.png" alt="기부 진행 한눈에">
+        </div>
+    </div>
 </section>
 <%@ include file="./footer.jsp" %>
 </body>
