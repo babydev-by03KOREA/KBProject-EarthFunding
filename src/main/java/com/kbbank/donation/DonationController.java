@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -24,10 +25,20 @@ public class DonationController {
     public String fundingList(Model model) throws Exception {
         logger.info("funding List Approach");
 
-        List<DonationDTO> dto = service.donationList();
-        model.addAttribute("products", dto);
+        List<DonationDTO> list = service.donationList();
+        model.addAttribute("list", list);
 
         return "Donation/list";
+    }
+
+    @RequestMapping(value = "fundingProduct.do", method = RequestMethod.GET)
+    public String fundingView(@RequestParam("n") int fundingNum, Model model) throws Exception {
+        logger.info("funding List Approach");
+
+        DonationDTO dto = service.goodsView(fundingNum);
+        model.addAttribute("list", fundingNum);
+
+        return "Donation/product";
     }
 
     @RequestMapping(value = "polarBear.do", method = RequestMethod.GET)

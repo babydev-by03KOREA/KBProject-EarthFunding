@@ -20,11 +20,10 @@ public class DonationDAO implements IDonationDAO{
         return session.selectList(statement+".donationList");
     }
 
-    /*
-    List 구현 후 상세페이지 제작예정임.
+
     @Override
-    public DonationDTO donationView(int gdsNum) throws Exception {
-        return session.selectOne(statement+".");
+    public DonationDTO donationView(int fundingNum) throws Exception {
+        return session.selectOne(statement+".donationView");
     }
-    */
+
 }

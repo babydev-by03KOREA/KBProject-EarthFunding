@@ -12,10 +12,16 @@
 <%@ include file="../header.jsp" %>
 <section>
     <h1><strong>원하는 펀딩을 선택하세요</strong></h1>
-    <c:forEach items="${dto}" var="list">
-        <h1>${dto.fundingName}</h1>
+    <c:forEach items="${list}" var="list">
+        <h1>${list.fundingNum}</h1>
+        <h1>${list.fundingName}</h1>
+        <h1><fmt:formatNumber value="${list.fundingMaxPrice}" pattern="###,###,###"/></h1>
+        <h1>${list.fundingDes}</h1>
+        <h1>${list.fundingImg}</h1>
+        <h1><fmt:formatDate value="${list.gdsDate}" pattern="yyyy-mm-dd"/></h1>
     </c:forEach>
     <div class="funding_list">
+    <%-- HardCoding Area --%>
         <div class="product1">
             <a href="/donation/polarBear.do"><h3>북극곰에 내집마련 프로젝트 🏡</h3></a>
             <img src="${cp}/resources/view/img/pbear.jpg" alt=""/>

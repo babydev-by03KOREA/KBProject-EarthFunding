@@ -9,12 +9,23 @@
         select fundingNum,
                fundingName,
                fundingMaxPrice,
-               fundingDes,
                fundingImg,
                gdsDate
         from Funding_Projects
         order by fundingNum desc
         ]]>
+    </select>
+
+    <!-- 상품 조회 -->
+    <select id="donationView" resultType="DonationDTO">
+        select fundingNum,
+               fundingName,
+               fundingMaxPrice,
+               fundingDes,
+               fundingImg,
+               gdsDate
+        from Funding_Projects
+        where fundingNum = #{fundingNum}
     </select>
 
 </mapper>

@@ -17,4 +17,9 @@ public class DonationService implements IDonationService{
     public List<DonationDTO> donationList() throws Exception {
         return dao.donationList();
     }
+
+    @Override
+    public DonationDTO goodsView(int fundingNum) throws Exception {
+        return dao.donationView(fundingNum);
+    }
 }

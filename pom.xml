@@ -206,8 +206,9 @@
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<!-- if error > 2.5 version up -->
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

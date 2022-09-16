@@ -9,5 +9,5 @@ public interface IDonationDAO {
     public List<DonationDTO> donationList() throws Exception;
 
     // 상품조회
-//    public DonationDTO donationView(int gdsNum) throws Exception;
+    public DonationDTO donationView(int gdsNum) throws Exception;
 }
