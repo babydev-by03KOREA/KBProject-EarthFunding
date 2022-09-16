@@ -19,7 +19,7 @@ public class DonationService implements IDonationService{
     }
 
     @Override
-    public DonationDTO goodsView(int fundingNum) throws Exception {
-        return dao.donationView(fundingNum);
+    public DonationDTO donationView(int donationNum) throws Exception {
+        return dao.donationView(donationNum);
     }
 }

@@ -6,26 +6,22 @@
     <!-- 상품 목록 -->
     <select id="donationList" resultType="DonationDTO">
         <![CDATA[
-        select fundingNum,
-               fundingName,
-               fundingMaxPrice,
-               fundingImg,
+        select donationNum,
+               donationName,
+               donationMaxPrice,
                gdsDate
-        from Funding_Projects
-        order by fundingNum desc
+        from Donation_Projects
+        order by donationNum desc
         ]]>
     </select>
 
     <!-- 상품 조회 -->
     <select id="donationView" resultType="DonationDTO">
-        select fundingNum,
-               fundingName,
-               fundingMaxPrice,
-               fundingDes,
-               fundingImg,
-               gdsDate
-        from Funding_Projects
-        where fundingNum = #{fundingNum}
+        <![CDATA[
+            select *
+            from Donation_Projects
+            where donationNum = #{donationNum}
+        ]]>
     </select>
 
 </mapper>

@@ -57,8 +57,8 @@
             </form>
             <div>
                 <ul class="find__menu">
-                    <li><a href="${pageContext.request.contextPath}/find/findID.jsp">아이디 찾기 ></a></li>
-                    <li><a href="${pageContext.request.contextPath}/find/findPWD.jsp">비밀번호 찾기 ></a></li>
+                    <li><a href="/member/findMyId.do">아이디 찾기 ></a></li>
+                    <li><a href="/member/findMyPWD.do">비밀번호 찾기 ></a></li>
                 </ul>
             </div>
             <hr/>

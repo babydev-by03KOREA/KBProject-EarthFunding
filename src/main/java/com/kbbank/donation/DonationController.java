@@ -22,7 +22,7 @@ public class DonationController {
     private DonationService service;
 
     @RequestMapping(value = "list.do", method = RequestMethod.GET)
-    public String fundingList(Model model) throws Exception {
+    public String donationList(Model model) throws Exception {
         logger.info("funding List Approach");
 
         List<DonationDTO> list = service.donationList();
@@ -31,27 +31,14 @@ public class DonationController {
         return "Donation/list";
     }
 
-    @RequestMapping(value = "fundingProduct.do", method = RequestMethod.GET)
-    public String fundingView(@RequestParam("n") int fundingNum, Model model) throws Exception {
-        logger.info("funding List Approach");
+    @RequestMapping(value = "donationProduct.do", method = RequestMethod.GET)
+    public String donationProduct(@RequestParam("n") int donationNum, Model model) throws Exception {
+        logger.info("funding Several View Approach");
 
-        DonationDTO dto = service.goodsView(fundingNum);
-        model.addAttribute("list", fundingNum);
+        DonationDTO product = service.donationView(donationNum);
+        model.addAttribute("product", product);
 
-        return "Donation/product";
+        return "Donation/donationProduct";
     }
 
-    @RequestMapping(value = "polarBear.do", method = RequestMethod.GET)
-    public String PolarBear() {
-        logger.info("polarBear Donation Approach");
-
-        return "Donation/polarBear";
-    }
-
-    @RequestMapping(value = "turtle.do", method = RequestMethod.GET)
-    public String turtle() {
-        logger.info("polarBear Donation Approach");
-
-        return "Donation/turtle";
-    }
 }

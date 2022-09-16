@@ -12,19 +12,13 @@
 <%@ include file="../header.jsp" %>
 <section>
     <h1><strong>원하는 펀딩을 선택하세요</strong></h1>
-    <c:forEach items="${list}" var="list">
-        <h1>${list.fundingNum}</h1>
-        <h1>${list.fundingName}</h1>
-        <h1><fmt:formatNumber value="${list.fundingMaxPrice}" pattern="###,###,###"/></h1>
-        <h1>${list.fundingDes}</h1>
-        <h1>${list.fundingImg}</h1>
-        <h1><fmt:formatDate value="${list.gdsDate}" pattern="yyyy-mm-dd"/></h1>
-    </c:forEach>
     <div class="funding_list">
-    <%-- HardCoding Area --%>
+        <c:forEach items="${list}" var="list">
         <div class="product1">
-            <a href="/donation/polarBear.do"><h3>북극곰에 내집마련 프로젝트 🏡</h3></a>
-            <img src="${cp}/resources/view/img/pbear.jpg" alt=""/>
+            <a href="/donation/donationProduct.do?n=${list.donationNum}"><h3>${list.donationName}</h3></a>
+            <img src="${cp}/resources/view/img/pbear.jpg" alt="북극곰"/>
+            <h1><fmt:formatNumber value="${list.donationMaxPrice}" pattern="~ ###,###,###₩"/></h1>
+            <h1><fmt:formatDate value="${list.gdsDate}" pattern="yyyy-mm-dd"/></h1>
         </div>
         <div class="product2">
             <a href="/donation/turtle.do"><h3>거북이에 멸종방지 프로젝트 🐢</h3></a>
@@ -34,6 +28,7 @@
             <h3>미세먼지 줄이기 프로젝트 🏭</h3>
             <img src="${cp}/resources/view/img/factory.jpg" alt=""/>
         </div>
+        </c:forEach>
     </div>
 </section>
 <%@ include file="../footer.jsp" %>

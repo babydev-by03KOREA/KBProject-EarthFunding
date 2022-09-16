@@ -10,8 +10,15 @@
     <title>기부상품</title>
 </head>
 <body>
-    <section>
-
-    </section>
+<%@ include file="../header.jsp" %>
+<section>
+    <h1>${product.donationNum}</h1>
+    <h1>${product.donationName}</h1>
+    <h1>${product.donationMaxPrice}</h1>
+    <h1>${product.donationDescription}</h1>
+    <h1>${product.donationPurpose}</h1>
+    <h1>${product.gdsDate}</h1>
+</section>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

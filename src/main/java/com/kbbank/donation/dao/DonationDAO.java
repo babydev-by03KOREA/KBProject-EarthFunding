@@ -22,8 +22,9 @@ public class DonationDAO implements IDonationDAO{
 
 
     @Override
-    public DonationDTO donationView(int fundingNum) throws Exception {
-        return session.selectOne(statement+".donationView");
+    public DonationDTO donationView(int donationNum) throws Exception {
+        // SelectOne("option", selectOpt);
+        return session.selectOne(statement+".donationView", donationNum);
     }
 
 }

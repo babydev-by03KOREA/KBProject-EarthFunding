@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/donation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/donation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -22,14 +21,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/DonationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/DonationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/DonationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/DonationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IDonationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IDonationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/donation-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/donation-mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kbbank/donation/DonationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kbbank/donation/DonationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/donation-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/donation-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/DonationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/com/kbbank/donation/DonationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/mybatis/donation-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/classes/mybatis/donation-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/donation/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/donation-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/donation/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/polarBear.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/donationProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/turtle.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +293,7 @@
       <workItem from="1663036511467" duration="9948000" />
       <workItem from="1663130243725" duration="8246000" />
       <workItem from="1663164247507" duration="4814000" />
-      <workItem from="1663212449528" duration="16557000" />
+      <workItem from="1663212449528" duration="24236000" />
     </task>
     <servers />
   </component>
