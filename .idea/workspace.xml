@@ -10,26 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/donation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/DonationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/DonationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/DonationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/DonationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IDonationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IDonationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/DonationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/DonationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/DonationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/DonationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IDonationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IDonationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/donation-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/donation-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/polarBear.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/donationProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/turtle.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/DonationList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/DonationList.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +275,7 @@
       <workItem from="1663036511467" duration="9948000" />
       <workItem from="1663130243725" duration="8246000" />
       <workItem from="1663164247507" duration="4814000" />
-      <workItem from="1663212449528" duration="24236000" />
+      <workItem from="1663212449528" duration="25936000" />
     </task>
     <servers />
   </component>
