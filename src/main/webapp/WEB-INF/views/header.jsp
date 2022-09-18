@@ -25,7 +25,7 @@
     <ul class="navbar__menu">
         <li><a href="/funding/simulation.do">지구 시뮬레이션</a></li>
         <li><a href="/funding/list.do">기부하기</a></li>
-        <li><a href="#">기부만들기</a></li>
+        <li><a href="/funding/createFunding.do">기부만들기</a></li>
         <li><a href="#">heal the world</a></li>
         <li><a href="#">우리의 추구</a></li>
     </ul>

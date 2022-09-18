@@ -10,33 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17b05436-a9f3-463e-b28b-8daf4e7b6158" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IFundingDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/FundingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IFundingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/GlobalWarming.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/createFunding.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/factory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/polarBear.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/turtle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/GlobalWarming.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/img/world-map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/javascript/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/DonationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/FundingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/KakaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/KakaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/DonationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/FundingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IDonationDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/DonationDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/DonationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/FundingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IDonationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/donation-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/funding-mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/donationProduct.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Donation/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/FundingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/FundingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/FundingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/FundingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IFundingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dao/IFundingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/FundingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/FundingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IFundingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kbbank/donation/service/IFundingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/funding-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/funding-mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/GlobalWarming.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/GlobalWarming.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/createFunding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/createFunding.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/factory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/factory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/polarBear.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/polarBear.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/turtle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/funding/turtle.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/DonationList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/fundingList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/JoinSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/JoinSuccess.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/view/css/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/view/css/polarBear.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +38,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -140,7 +132,8 @@
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.do" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="donation:war exploded">
           <settings>
@@ -303,7 +296,9 @@
       <workItem from="1663334613782" duration="482000" />
       <workItem from="1663335449927" duration="1945000" />
       <workItem from="1663340569622" duration="1985000" />
-      <workItem from="1663379844322" duration="4570000" />
+      <workItem from="1663379844322" duration="5891000" />
+      <workItem from="1663495537133" duration="502000" />
+      <workItem from="1663496049159" duration="9137000" />
     </task>
     <servers />
   </component>

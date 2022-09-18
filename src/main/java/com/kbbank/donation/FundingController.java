@@ -39,6 +39,24 @@ public class FundingController {
         return "funding/list";
     }
 
+    // 상품 등록
+    @RequestMapping(value = "createFunding.do", method = RequestMethod.GET)
+    public String getCreateFunding(Model model) throws Exception {
+        logger.info("get createFunding.do");
+
+        return "funding/createFunding";
+    }
+
+
+    // 상품 등록
+    @RequestMapping(value = "createFundingSuccess.do", method = RequestMethod.POST)
+    public String postCreateFunding(FundingDTO dto) throws Exception {
+
+        service.fundingCreate(dto);
+
+        return "member/JoinSuccess";
+    }
+
     @RequestMapping(value = "polarBear.do", method = RequestMethod.GET)
     public String polarBear(Model model) throws Exception {
         logger.info("funding Several View > polarBear.do Approach");

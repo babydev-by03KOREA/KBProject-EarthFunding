@@ -27,4 +27,10 @@ public class FundingDAO implements IFundingDAO {
         return session.selectOne(statement+".fundingView", fundingNum);
     }
 
+    // 상품등록
+    @Override
+    public void fundingCreate(FundingDTO dto) throws Exception {
+        session.insert(statement + ".fundingCreate", dto);
+    }
+
 }

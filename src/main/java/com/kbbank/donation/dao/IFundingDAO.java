@@ -10,4 +10,7 @@ public interface IFundingDAO {
 
     // 상품조회
     public FundingDTO fundingView(int fundingNum) throws Exception;
+
+    // 상품등록
+    public void fundingCreate(FundingDTO dto) throws Exception;
 }

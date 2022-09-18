@@ -1,6 +1,7 @@
 package com.kbbank.donation.dto;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class MemberDTO {
 	

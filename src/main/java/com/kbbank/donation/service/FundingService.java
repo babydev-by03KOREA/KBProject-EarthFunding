@@ -22,4 +22,9 @@ public class FundingService implements IFundingService {
     public FundingDTO fundingView(int fundingNum) throws Exception {
         return dao.fundingView(fundingNum);
     }
+
+    @Override
+    public void fundingCreate(FundingDTO dto) throws Exception {
+        dao.fundingCreate(dto);
+    }
 }

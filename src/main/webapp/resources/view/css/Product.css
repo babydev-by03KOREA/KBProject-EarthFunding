@@ -5,6 +5,27 @@
     /*margin: 0 auto;*/
 }
 
+.product {
+    display: flex;
+}
+
+.productImg {
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 700px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+}
+
+.productPrice input{
+
+}
+
 p {
   font-size: 25px;
 }
