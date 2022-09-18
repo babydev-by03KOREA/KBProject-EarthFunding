@@ -1,2 +1,10 @@
 @charset "utf-8";
 
+.project {
+    padding: 40px 60px;
+    /*margin: 0 auto;*/
+}
+
+p {
+  font-size: 25px;
+}

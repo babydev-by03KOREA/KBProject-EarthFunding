@@ -9,6 +9,6 @@
     <typeAliases>
         <typeAlias alias="MemberDTO" type="com.kbbank.donation.dto.MemberDTO"/>
         <typeAlias alias="KakaoDTO" type="com.kbbank.donation.dto.KakaoDTO"/>
-        <typeAlias alias="DonationDTO" type="com.kbbank.donation.dto.DonationDTO"/>
+        <typeAlias alias="FundingDTO" type="com.kbbank.donation.dto.FundingDTO"/>
     </typeAliases>
 </configuration>

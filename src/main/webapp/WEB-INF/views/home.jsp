@@ -19,17 +19,17 @@
     <div class="slide_div_wrap">
         <div class="slide_div">
             <div>
-                <a href="/donation/polarBear.do">
+                <a href="/funding/polarBear.do">
                     <img src="${cp}/resources/view/img/pbear.jpg" />
                 </a>
             </div>
             <div>
-                <a href="/donation/turtle.do">
+                <a href="/funding/turtle.do">
                     <img src="${cp}/resources/view/img/turtle.jpg" />
                 </a>
             </div>
             <div>
-                <a href="/donation/factory.do">
+                <a href="/funding/factory.do">
                     <img src="${cp}/resources/view/img/factory.jpg" />
                 </a>
             </div>
