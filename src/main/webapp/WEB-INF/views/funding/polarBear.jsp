@@ -7,8 +7,8 @@
 <head>
     <link rel="shortcut icon" href="${cp}/resources/view/img/IconLogo.png" type="image/x-icon"> <!--추가-->
     <link rel="stylesheet" href="${cp}/resources/view/css/Product.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="${cp}/resources/view/javascript/Product.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <title>북극곰의 내집마련 프로젝트 🏠️</title>
 </head>
 <body>
