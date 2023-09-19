@@ -1,5 +1,7 @@
 package com.kbbank.donation.dto;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.Date;
 
 public class FundingDTO {
@@ -14,6 +16,8 @@ public class FundingDTO {
     *  */
 
     private int fundingNum;
+    private MultipartFile imageFile;
+    private String savedImageName;
     private String fundingName;
     private int fundingMaxPrice;
     private String fundingDescription;
@@ -26,6 +30,22 @@ public class FundingDTO {
 
     public void setFundingNum(int fundingNum) {
         this.fundingNum = fundingNum;
+    }
+
+    public MultipartFile getImageFile() {
+        return imageFile;
+    }
+
+    public void setImageFile(MultipartFile imageFile) {
+        this.imageFile = imageFile;
+    }
+
+    public String getSavedImageName() {
+        return savedImageName;
+    }
+
+    public void setSavedImageName(String savedImageName) {
+        this.savedImageName = savedImageName;
     }
 
     public String getFundingName() {

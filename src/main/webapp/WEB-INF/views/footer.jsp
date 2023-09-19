@@ -16,7 +16,7 @@
     <p>
         <span>developer: HJPark</span>
         <span>E-mail: hyeongju1122@gmail.com</span>
-        <span>&copy; 2022 First Spring Project.</span>
+        <span>&copy; Spring Project.</span>
     </p>
 </footer>
 </body>

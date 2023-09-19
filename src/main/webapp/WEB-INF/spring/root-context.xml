@@ -11,10 +11,10 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-	    <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-	    <property name="jdbcUrl" value="jdbc:oracle:thin:@OCDB_medium?TNS_ADMIN=/Users/parkhyeongju/Downloads/Wallet_OCDB"/>
-	    <property name="username" value="ADMIN"/>
-	    <property name="password" value="616125Os!qhdkscjfwj@"/>
+	    <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+	    <property name="jdbcUrl" value="jdbc:mysql://localhost/earth_funding?serverTimezone=UTC"/>
+	    <property name="username" value="root"/>
+	    <property name="password" value="database"/>
 	</bean>
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -25,6 +25,10 @@
 	
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 	    <constructor-arg ref="sqlSessionFactory"/>
+	</bean>
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="10000000" />
 	</bean>
 	
 	<mybatis-spring:scan base-package="com.kbbank.donation..*"/>

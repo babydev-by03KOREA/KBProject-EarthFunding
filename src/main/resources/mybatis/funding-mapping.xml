@@ -7,6 +7,7 @@
     <select id="fundingList" resultType="FundingDTO">
         <![CDATA[
         select fundingNum,
+               imageFile,
                fundingName,
                fundingMaxPrice,
                gdsDate
@@ -26,8 +27,8 @@
 
     <!-- 상품 등록 -->
     <insert id="fundingCreate">
-        insert into FUNDING_PROJECTS(fundingNum, fundingName, fundingMaxPrice, fundingDescription, fundingPurpose, gdsDate)
-        values (SEQ_NUM.nextval, #{fundingName}, #{fundingMaxPrice}, #{fundingDescription}, #{fundingPurpose}, #{gdsDate})
+        insert into FUNDING_PROJECTS(fundingName, imageFile, fundingMaxPrice, fundingDescription, fundingPurpose, gdsDate)
+        values (#{fundingName}, #{savedImageName}, #{fundingMaxPrice}, #{fundingDescription}, #{fundingPurpose}, #{gdsDate})
     </insert>
 
 </mapper>

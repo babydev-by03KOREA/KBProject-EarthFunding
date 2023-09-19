@@ -15,11 +15,16 @@
     <br> 지구를 위한 실천에 동참해주셔서 진심으로 감사드립니다.
     <br>
 </h2>
-<form method="post" action="/funding/createFundingSuccess.do" class="createForm">
+<form method="post" action="/funding/createFundingSuccess.do" class="createForm" enctype="multipart/form-data">
 
     <div class="inputArea">
         <label for="fundingName">펀딩 이름</label><br>
         <input type="text" id="fundingName" name="fundingName" placeholder="펀딩에 목적이 잘 나타나는 이름을 지어주세요!"/>
+    </div>
+
+    <div class="inputArea">
+        <label for="fundingImg">펀딩 이미지</label><br>
+        <input type="file" id="fundingImg" name="imageFile" />
     </div>
 
     <div class="inputArea">
@@ -29,12 +34,12 @@
 
     <div class="inputArea">
         <label for="fundingDescription">펀딩 설명</label><br>
-        <textarea rows="5" cols="50" id="fundingDescription" name="fundingDescription" placeholder="펀딩을 1200자 내로 설명해주세요!"></textarea>
+        <textarea rows="5" cols="15" id="fundingDescription" name="fundingDescription" placeholder="펀딩을 1200자 내로 설명해주세요!"></textarea>
     </div>
 
     <div class="inputArea">
         <label for="fundingPurpose">펀딩 목적</label><br>
-        <textarea rows="5" cols="50" id="fundingPurpose" name="fundingPurpose" placeholder="펀딩에 목적을 1200자 내로 적어주세요!"></textarea>
+        <textarea rows="5" cols="15" id="fundingPurpose" name="fundingPurpose" placeholder="펀딩에 목적을 1200자 내로 적어주세요!"></textarea>
     </div>
 
     <div class="inputArea">
